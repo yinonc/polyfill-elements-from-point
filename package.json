@@ -4,7 +4,10 @@
   "description": "elements from point polyfill with native fallback",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "npm run jest && npm run karma",
+    "jest": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "karma": "karma start --single-run",
     "test:debug": "node --inspect-brk node_modules/.bin/jest",
     "build": "npx babel src --out-dir temp && webpack"
@@ -31,6 +34,8 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.9.0",
     "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jasmine": "^4.1.0",
     "jest": "^25.1.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",

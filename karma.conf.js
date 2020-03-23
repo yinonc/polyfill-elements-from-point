@@ -1,6 +1,6 @@
-const filesPattern = 'test/*.spec.js'
+const filesPattern = 'test/*.karma.js'
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
         files: [
             filesPattern
@@ -11,5 +11,5 @@ module.exports = function(config) {
             [filesPattern]: ['webpack']
         },
         webpack: {}
-    });
-};
+    })
+}

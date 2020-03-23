@@ -1,23 +1,23 @@
 export default function elementsFromPoint(x, y) {
-    const elements = [];
-    const pointerEvents = [];
+    const elements = []
+    const pointerEvents = []
 
-    let el = null;
+    let el = null
     do {
-        const topElement = window.document.elementFromPoint(x, y);
+        const topElement = window.document.elementFromPoint(x, y)
         if (el !== topElement) {
             el = topElement
-            elements.push(el);
-            pointerEvents.push(el.style.pointerEvents);
-            el.style.pointerEvents = 'none';
+            elements.push(el)
+            pointerEvents.push(el.style.pointerEvents)
+            el.style.pointerEvents = 'none'
         } else {
-            el = null;
+            el = null
         }
-    } while (el);
+    } while (el)
 
     elements.forEach((element, index) => {
         element.style.pointerEvents = pointerEvents[index]
     })
 
-    return elements;
+    return elements
 }

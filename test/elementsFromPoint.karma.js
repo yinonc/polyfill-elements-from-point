@@ -9,7 +9,7 @@ function getDefaultElement() {
     return element
 }
 
-describe('elementsFromPoint', function () {
+describe('elementsFromPoint', () => {
     let element
     let bodyElement
     let htmlElement
@@ -28,14 +28,14 @@ describe('elementsFromPoint', function () {
         expect(elements[0]).toEqual(element)
         expect(elements[1]).toEqual(bodyElement)
         expect(elements[2]).toEqual(htmlElement)
-    });
+    })
 
     it('should not return the added div element when calling elementsFromPoint not from its point', () => {
         const elements = elementsFromPoint(5, 5)
 
         expect(elements.length).toBe(1)
         expect(elements[0]).toEqual(htmlElement)
-    });
+    })
 
     it('should not keep pointerEvents none after getting elementsFromPoint', () => {
         const elements = elementsFromPoint(15, 15)
@@ -43,5 +43,5 @@ describe('elementsFromPoint', function () {
         elements.forEach(el => {
             expect(el.style.pointerEvents).not.toBe('none')
         })
-    });
-});
+    })
+})

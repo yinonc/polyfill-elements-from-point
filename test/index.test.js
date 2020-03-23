@@ -1,6 +1,6 @@
 import elementsFromPointPolyfill from '../src/index'
 
-describe('set elementsFromPoint', function () {
+describe('set elementsFromPoint', () => {
     beforeEach(() => {
         window.document.elementsFromPoint = undefined
     })
@@ -9,7 +9,7 @@ describe('set elementsFromPoint', function () {
         elementsFromPointPolyfill(window)
 
         expect(typeof window.document.elementsFromPoint).toBe('function')
-    });
+    })
 
     test('should set msElementsFromPoint if exists and elementsFromPoint does not exist', () => {
         const func = () => {}
@@ -18,7 +18,7 @@ describe('set elementsFromPoint', function () {
         elementsFromPointPolyfill(window)
 
         expect(window.document.elementsFromPoint).toEqual(func)
-    });
+    })
 
     test('should not set msElementsFromPoint or polyfill if elementsFromPoint exists', () => {
         const func1 = () => {}
@@ -29,5 +29,5 @@ describe('set elementsFromPoint', function () {
         elementsFromPointPolyfill(window)
 
         expect(window.document.elementsFromPoint).toEqual(func1)
-    });
-});
+    })
+})

@@ -5,7 +5,7 @@ function elementsFromPointPolyfill(windowObj) {
         return
     }
     if (windowObj.document.msElementsFromPoint) {
-        window.document.elementsFromPoint = windowObj.document.msElementsFromPoint;
+        window.document.elementsFromPoint = windowObj.document.msElementsFromPoint
         return
     }
     window.document.elementsFromPoint = elementsFromPoint
