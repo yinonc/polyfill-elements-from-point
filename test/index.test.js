@@ -30,4 +30,12 @@ describe('set elementsFromPoint', () => {
 
         expect(window.document.elementsFromPoint).toEqual(func1)
     })
+
+    test('should not crash if window argument is undefined', () => {
+        expect(() => elementsFromPointPolyfill(undefined)).not.toThrow()
+    })
+
+    test('should not crash if document on window argument is undefined', () => {
+        expect(() => elementsFromPointPolyfill({})).not.toThrow()
+    })
 })
