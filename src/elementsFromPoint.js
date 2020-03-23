@@ -4,7 +4,7 @@ export default function elementsFromPoint(x, y) {
 
     let el = null;
     do {
-        const topElement = document.elementFromPoint(x, y);
+        const topElement = window.document.elementFromPoint(x, y);
         if (el !== topElement) {
             el = topElement
             elements.push(el);
