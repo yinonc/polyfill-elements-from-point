@@ -2,6 +2,8 @@
 
 This polyfill comes to solve missing [elementsFromPoint](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint) in some browsers / specific versions, but to use [msElementsFromPoint](https://docs.microsoft.com/en-us/previous-versions/hh772121(v%3Dvs.85)) if exists.
 
+Using VanillaJS, very small package size.
+
 #### How it works:
 * Check for native `document.elementsFromPoint`
 * If doesn't exist, try fallback to `document.msElementsFromPoint`
@@ -33,4 +35,4 @@ And then window.document.elementsFromPoint would be available no matter which br
 ##### Author note:   
 
 Keep in mind some browsers / some versions are returning `null`. See [documantation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint).  
-Although the polyfill function will always return an array, I didn't want to wrap whole function to return `[]` if received `null`, but to return same value from native functions.  
+Although the polyfill function will always return an array, I didn't want to wrap whole function to return `[]` if received `null`, but to return original value from native functions.  
