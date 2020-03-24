@@ -15,18 +15,18 @@ Polyfill function is based on https://gist.github.com/iddan/54d5d9e58311b0495a91
 
 First install package:
 
-`$ npm install --save elements-from-point-polyfill`
+`$ npm install --save polyfill-elements-from-point`
 
 On application load:
 ```javascript
-const elementsFromPointPolyfill = require('elements-from-point-polyfill')
+const elementsFromPointPolyfill = require('polyfill-elements-from-point')
 
 elementsFromPointPolyfill(window)
 ```
 
 Or ES6:
 ```javascript
-import elementsFromPointPolyfill from 'elements-from-point-polyfill'
+import elementsFromPointPolyfill from 'polyfill-elements-from-point'
 
 elementsFromPointPolyfill(window)
 ```

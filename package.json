@@ -1,5 +1,5 @@
 {
-  "name": "elements-from-point-polyfill",
+  "name": "polyfill-elements-from-point",
   "version": "1.0.0",
   "description": "elements from point polyfill with native fallback",
   "main": "index.js",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yinonc/elements-from-point-polyfill.git"
+    "url": "git+https://github.com/yinonc/polyfill-elements-from-point.git"
   },
   "keywords": [
     "elementsFromPoint",
@@ -26,9 +26,9 @@
   "author": "yinonc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yinonc/elements-from-point-polyfill/issues"
+    "url": "https://github.com/yinonc/polyfill-elements-from-point/issues"
   },
-  "homepage": "https://github.com/yinonc/elements-from-point-polyfill#readme",
+  "homepage": "https://github.com/yinonc/polyfill-elements-from-point#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.2.2",
