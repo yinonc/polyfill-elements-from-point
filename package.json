@@ -1,6 +1,6 @@
 {
   "name": "polyfill-elements-from-point",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "elements from point polyfill with native fallback",
   "main": "index.js",
   "scripts": {

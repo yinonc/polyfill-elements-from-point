@@ -32,7 +32,8 @@ elementsFromPointPolyfill(window)
 ```
 And then window.document.elementsFromPoint would be available no matter which browser you're using :)
 
-##### Author note:   
+##### Author notes:   
 
-Keep in mind some browsers / some versions are returning `null`. See [documantation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint).  
+* Keep in mind some browsers / some versions are returning `null`. See [documantation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint).  
 Although the polyfill function will always return an array, I didn't want to wrap whole function to return `[]` if received `null`, but to return original value from native functions.  
+* By using [babel preset env](https://babeljs.io/docs/en/babel-preset-env), I'm assuring browsers compatibility.
