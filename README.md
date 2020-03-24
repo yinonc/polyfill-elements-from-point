@@ -13,7 +13,7 @@ Polyfill function is based on https://gist.github.com/iddan/54d5d9e58311b0495a91
 
 First install package:
 
-`$ npm install --save-dev elements-from-point-polyfill`
+`$ npm install --save elements-from-point-polyfill`
 
 On application load:
 ```javascript
@@ -28,3 +28,9 @@ import elementsFromPointPolyfill from 'elements-from-point-polyfill'
 
 elementsFromPointPolyfill(window)
 ```
+And then window.document.elementsFromPoint would be available no matter which browser you're using :)
+
+##### Author note:   
+
+Keep in mind some browsers / some versions are returning `null`. See [documantation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint).  
+Although the polyfill function will always return an array, I didn't want to wrap whole function to return `[]` if received `null`, but to return same value from native functions.  
