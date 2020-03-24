@@ -18,13 +18,7 @@ First install package:
 `$ npm install --save polyfill-elements-from-point`
 
 On application load:
-```javascript
-const elementsFromPointPolyfill = require('polyfill-elements-from-point')
 
-elementsFromPointPolyfill(window)
-```
-
-Or ES6:
 ```javascript
 import elementsFromPointPolyfill from 'polyfill-elements-from-point'
 
