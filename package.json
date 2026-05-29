@@ -41,7 +41,7 @@
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^3.1.1",
     "karma-webpack": "^5.0.1",
-    "webpack": "^4.42.0",
+    "webpack": "^5.106.2",
     "webpack-cli": "^3.3.11"
   }
 }
